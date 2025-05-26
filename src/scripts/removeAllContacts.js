@@ -5,7 +5,7 @@ export const removeAllContacts = async () => {
     writeContacts([]);
     console.log('Усі контакти успішно видалені.');
   } catch (error) {
-    console.log('Помилка при читанні контаків:', error);
+    console.log('Помилка при видаленні контаків:', error);
   }
 };
 
