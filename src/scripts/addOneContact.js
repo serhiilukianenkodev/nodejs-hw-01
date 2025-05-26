@@ -6,7 +6,7 @@ export const addOneContact = async () => {
   try {
     const savedContacts = await readContacts();
     const newContact = createFakeContact();
-    await writeContacts([...savedContacts, newContact]);
+    writeContacts([...savedContacts, newContact]);
   } catch (error) {
     console.log('Помилка при додаванні контаку:', error);
   }
